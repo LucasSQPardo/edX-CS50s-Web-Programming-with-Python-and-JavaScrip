@@ -1,0 +1,89 @@
+<!-- continuar a partir do 1:10:30 -->
+<!DOCTYPE html>
+<html>
+    <meta name = "viewport", content = "width=device-width, initial-scale=1.0">
+    <style>
+        
+        ul > li{
+            color: rgb(240, 36, 155)
+        } /*: seleciona apenas os childs imediatos da unnordered list */
+
+        a::before{
+            content: "\21d2 Click-Here: ";
+            font-weight: bolder;
+            color: black;
+        }/* everything with a tag will get before the text, "click here" with the named style*/
+
+        input[type=text] {
+            background-color: lightgrey;
+        }
+        input[name=username] {
+            background-color:black;
+            color:whitesmoke;
+        }
+
+        button{
+            background-color:crimson;
+            font-size:24px;
+            width: 200px;
+            height: 50px;
+        }
+        button:hover{
+            transition: 2s;
+            background-color: blueviolet;
+            width:230px;
+            height:65px;
+        }
+
+        .text::selection{
+            background-color: crimson;
+            color:whitesmoke;
+            font-style: bolder;
+        }
+
+        @media (min-width: 640px) {
+            h1::before{
+                content: "This is going to show a message depending on the screen width";
+            }
+            body{
+                background-color: rgb(94, 94, 94)
+            }
+        }
+        @media(max-width: 639px ) {
+            h1::before{
+                content: "Welcome!";
+            }
+            body{
+                background-color: whitesmoke
+            }
+        }
+
+    </style>
+
+    <head>
+        <title>Testing psudo classes</title>
+    </head>
+    <body>
+        <h1></h1>
+        <p class="text">This is my first pseudo class test</p>
+
+        <ul>
+            <li> <a href="https://www.google.com"></a> Google = sem hiperlink no texto</li>
+            <li> <a href="https://www.cursoemvideo.com"> Curso em video = com hiperlink no texto </a> </li>        
+            <ol>
+                <li><a href="#">Teste1</a></li>
+                <li>Teste2 = sem click here ou referencia de hiperlink </li>
+            </ol>
+            <li>Nothing here</li>
+        </ul>
+
+        <form>
+            <input name="name" type="text" placeholder="Firstname">
+            <input name="name" type="text" placeholder="Surname">
+            <input name="username" type="text" placeholder="Username">
+            <input name="password" type="password" placeholder="Password">
+        </form>
+
+        <p id="button"><button>Test</button></p>
+    </body>
+</html>
