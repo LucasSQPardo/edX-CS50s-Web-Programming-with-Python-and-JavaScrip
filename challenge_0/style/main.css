@@ -1,0 +1,17 @@
+html {
+  background: #1b1919;
+}
+
+#header-nav {
+  background: yellow;
+  color: #1b1919;
+  border: 0px;
+}
+
+.logo-img {
+  background: url("../assets/dog_and_cat_png.png") no-repeat;
+  width: 143px;
+  margin: 10px 15px 10px 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

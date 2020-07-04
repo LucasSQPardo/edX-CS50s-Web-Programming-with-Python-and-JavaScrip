@@ -1,6 +1,8 @@
 <!-- continuar a partir do 1:10:30 -->
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
     <meta name = "viewport", content = "width=device-width, initial-scale=1.0">
     <style>
         
@@ -58,6 +60,24 @@
             }
         }
 
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .container > div {
+            background-color:blanchedalmond;
+            font-size: 16px;
+            margin: 16px;
+            padding: 20px;
+            width: 150px;
+        }
+
+        .row > div{
+            padding: 20px;
+            background-color: mediumseagreen;
+            border:1px solid black;
+        }
+
     </style>
 
     <head>
@@ -85,5 +105,17 @@
         </form>
 
         <p id="button"><button>Test</button></p>
+
+        <div class="container">
+            <div>This is my first container ever made</div>
+            <div>this is my second container ever made</div>
+            <div>This is my third container ever made</div>
+            <div>This is my fourth container ever made</div>
+        </div>
+        <div class ="row">
+            <div class="col-lg-3 col-sm-6">This is a section</div>
+            <div class="col-lg-4 col-sm-6">This is another section</div>
+            <div class="col-lg-2 col-sm-6">This is another section</div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,19 @@
+$bkColor: rgb(27, 25, 25);
+$headerfooter: yellow;
+$letterTransparency: 0.6;
+
+html{
+    background: $bkColor;
+}
+
+#header-nav{
+    background: $headerfooter;
+    color: $bkColor;
+    border:0px;
+}
+
+.logo-img{
+    background:url('../assets/dog_and_cat_png.png') no-repeat;
+    width: 143px;
+    margin:10px 15px 10px 0px;
+}
