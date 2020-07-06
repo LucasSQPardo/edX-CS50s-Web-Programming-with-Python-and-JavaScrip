@@ -1,5 +1,6 @@
-html {
-  background: #1b1919;
+body {
+  background-color: #1b1919;
+  font-size: 16px;
 }
 
 #header-nav {
@@ -8,10 +9,24 @@ html {
   border: 0px;
 }
 
-.logo-img {
-  background: url("../assets/dog_and_cat_png.png") no-repeat;
-  width: 143px;
+/*the idea was to turn the logo into the background layer of the ID, but for some reason its not rendering*/
+#logo-img {
+  width: 150px;
   margin: 10px 15px 10px 0px;
+}
+
+.navbar-brand h1 {
+  padding: 3px;
+  color: #1b1919;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 15px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
